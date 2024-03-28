@@ -86,3 +86,14 @@
 	font-size: 20px;
 	line-height: 28px;
 }
+.cta__title {
+	font-size: 34px;
+	line-height: 45px;
+}
+
+@media (max-width: 767px) {
+	.cta__title {
+		font-size: 25px;
+		line-height: 32px;
+	}
+}
