@@ -186,6 +186,10 @@ h2.client_name {
 	height: 150px;
 	object-fit: contain;
 }
+
+.numbering_part svg {
+	margin-top: -5px;
+}
 @media (max-width: 767px) {
 	.cta__title {
 		font-size: 25px;
