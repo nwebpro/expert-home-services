@@ -1398,6 +1398,8 @@ h6 {
 .about-thumb img {
 	width: 100%;
 	transition: all 2s ease;
+	position: relative;
+	z-index: 2;
 }
 
 .about-thumb img:hover {
@@ -1407,7 +1409,7 @@ h6 {
 	position: absolute;
 	bottom: 47px;
 	left: 27px;
-	z-index: -1;
+	z-index: 1;
 }
 
 .about-shape3 img {
@@ -5873,14 +5875,21 @@ textarea.form-control {
 }
 
 .testimonial-item .testimonial__desc {
-	font-size: 30px;
+	font-size: 20px;
 	line-height: 1.5;
 	font-weight: 700;
 	font-style: italic;
 	color: #1b1a1a;
 	margin-bottom: 0;
 }
-
+ul.testimonial__desc {
+	list-style: none;
+	padding: 0;
+	height: 250px;
+}
+ul.testimonial__desc li {
+	margin-bottom: 10px;
+}
 .testimonial__meta {
 	display: block;
 }
