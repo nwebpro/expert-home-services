@@ -42,6 +42,10 @@
 	font-size: 16px;
 }
 
+.more_services {
+	min-height: 233px;
+}
+
 /* ! Coverage Page */
 .coverage_area_style .about-discription p {
 	border-bottom: 0px;
@@ -201,6 +205,11 @@ h2.client_name {
 
 .numbering_part svg {
 	margin-top: -5px;
+}
+@media (max-width: 991px) {
+	.more_services {
+		min-height: 261px;
+	}
 }
 @media (max-width: 767px) {
 	.cta__title {

@@ -87,4 +87,15 @@ $(function () {
 		delay: 10,
 		time: 4000,
 	});
+
+	// Active Link
+	var currentPageURL = window.location.href;
+	// Get all menu items
+	var menuItems = document.querySelectorAll('#mainNavigation ul li a');
+	// Loop through each menu item to find the active page
+	for (var i = 0; i < menuItems.length; i++) {
+		if (menuItems[i].href === currentPageURL) {
+			menuItems[i].classList.add('active');
+		}
+	}
 });
