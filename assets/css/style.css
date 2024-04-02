@@ -4264,7 +4264,7 @@ textarea.form-control {
 /* Scroll Top Button */
 #scrollTopBtn {
 	position: fixed;
-	right: 10px;
+	left: 10px;
 	bottom: 30px;
 	width: 45px;
 	height: 45px;
@@ -4287,7 +4287,7 @@ textarea.form-control {
 }
 
 #scrollTopBtn.actived {
-	right: 30px;
+	left: 30px;
 	opacity: 1;
 }
 

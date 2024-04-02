@@ -206,6 +206,14 @@ h2.client_name {
 .numbering_part svg {
 	margin-top: -5px;
 }
+
+/* Logo Style */
+.logo-dark,
+.logo-light,
+.footer__widget-content img {
+	max-width: 305px;
+	width: 100%;
+}
 @media (max-width: 991px) {
 	.more_services {
 		min-height: 261px;
