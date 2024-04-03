@@ -98,6 +98,4 @@ $(function () {
 			menuItems[i].classList.add('active');
 		}
 	}
-
-	
 });

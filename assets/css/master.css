@@ -214,9 +214,49 @@ h2.client_name {
 	max-width: 305px;
 	width: 100%;
 }
+
+.get_a_quote_form {
+	box-shadow: 0px 5px 83px 0px rgba(40, 40, 40, 0.12);
+	background-color: #fff;
+	padding: 40px 80px;
+	border-radius: 5px;
+}
+
+.get_a_quote_form input[type='file']::file-selector-button {
+	border-radius: 4px;
+	padding: 0 16px;
+	height: 40px;
+	cursor: pointer;
+	border: none;
+	background-color: #f4f4f4;
+	margin-right: 16px;
+	height: 52px;
+}
+
+.select_wrap {
+	position: relative;
+}
+.select_wrap svg {
+	position: absolute;
+	right: 10px;
+	top: 67%;
+	transform: translateY(-50%);
+}
+.get_a_quote_form select {
+	position: relative;
+	width: 100%;
+	appearance: none;
+}
+.about_heading_style h2 {
+	font-size: 40px;
+}
+
 @media (max-width: 991px) {
 	.more_services {
 		min-height: 261px;
+	}
+	.get_a_quote_form {
+		padding: 30px;
 	}
 }
 @media (max-width: 767px) {
