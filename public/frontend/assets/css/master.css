@@ -1,0 +1,277 @@
+.why_choose_us_content,
+.success_content,
+.work_process {
+	background-color: #fff;
+	box-shadow: 0px 5px 83px 0px rgb(40 40 40 / 7%);
+	padding: 20px 40px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+.work_process {
+	padding: 20px 20px;
+}
+.numbering_part {
+	width: 50px;
+	height: 50px;
+	border: 2px solid #fe5b0e;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 50px;
+	font-size: 20px;
+	font-weight: 700;
+	color: #fe5b0e;
+	margin-bottom: 10px;
+}
+.why_choose_us_content h2,
+.success_content h2,
+.work_process h2 {
+	font-size: 24px;
+	line-height: 28px;
+	margin-bottom: 10px;
+}
+.work_process h2 {
+	font-size: 18px;
+}
+.why_choose_us_content p,
+.success_content p,
+.work_process p {
+	font-size: 18px;
+	line-height: 28px;
+}
+.work_process p {
+	font-size: 16px;
+}
+
+.more_services {
+	min-height: 233px;
+}
+
+/* ! Coverage Page */
+.coverage_area_style .about-discription p {
+	border-bottom: 0px;
+	margin-bottom: 20px;
+	padding-bottom: 0px;
+}
+.coverage_area_style .about-discription h2 {
+	font-size: 20px;
+	line-height: 28px;
+	margin-bottom: 10px;
+}
+.coverage_area_style .about-discription ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+.coverage_area_style .about-discription ul li {
+	border: 1px solid #fe5a0e;
+	padding: 5px 10px;
+	border-radius: 70px;
+	color: #121212;
+	font-weight: 700;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+.coverage_area_style .about-discription ul li:hover {
+	background-color: #fe5a0e;
+	color: #fff;
+	transition: all 0.3s;
+}
+/* ! Counter */
+.counter_item {
+	background-color: #fff;
+	box-shadow: 0 5px 83px 0 rgba(40, 40, 40, 0.12);
+	text-align: center;
+	padding: 20px;
+	border-radius: 20px;
+}
+.top_item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	margin-bottom: 10px;
+}
+.top_item h4 {
+	margin-bottom: 0px;
+}
+.counter__icon i {
+	color: #fe5a0e;
+	font-size: 25px;
+}
+.counter_item h3 {
+	margin-bottom: 0px;
+	font-size: 20px;
+	line-height: 28px;
+}
+.cta__title {
+	font-size: 34px;
+	line-height: 45px;
+}
+
+/* slider styles */
+.sd_master_wrapper {
+	position: relative;
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 0;
+	border-radius: 10px;
+	z-index: 9999;
+}
+.sdtestBg3 {
+	height: 100%;
+	width: 80%;
+	background: #fff;
+	position: absolute;
+	bottom: -40px;
+	left: 10%;
+	border-radius: 20px;
+	box-shadow: 0px 18px 52.8537px rgb(215 228 249 / 50%);
+	z-index: 1;
+}
+.sdtestBg2 {
+	height: 100%;
+	width: 90%;
+	background: #fff;
+	position: absolute;
+	bottom: -22px;
+	left: 5%;
+	border-radius: 20px;
+	box-shadow: 0px 18px 52.8537px rgb(215 228 249 / 50%);
+	z-index: 2;
+}
+.slideshow {
+	position: relative;
+	height: auto;
+	padding: 50px 0px;
+	background: #fff;
+	box-shadow: 0px 18px 52.8537px rgba(215, 228, 249, 0.5);
+	border-radius: 20px;
+	background-image: url(https://farsighttechnologies.com/wp-content/uploads/2021/03/quote1.png),
+		url(https://farsighttechnologies.com/wp-content/uploads/2021/03/quote.png);
+	background-position: top 15px left 15px, bottom 40% right 15px;
+	background-repeat: no-repeat;
+	background-size: 180px, 180px;
+	z-index: 3;
+}
+.pagingInfo {
+	position: absolute;
+	bottom: 0;
+	z-index: 999;
+}
+.sdCustomSliderHeadig {
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 1.6em;
+	text-align: center;
+}
+.sdAllContent {
+	width: 75%;
+	margin: auto;
+}
+.thumbnail img {
+	height: 55px;
+	width: 55px;
+	border-radius: 50%;
+	margin: auto;
+	margin-top: 15px;
+}
+.content {
+	display: block !important;
+	padding: 5px;
+}
+h2.client_name {
+	font-size: 20px;
+	text-align: center;
+	font-style: italic;
+	color: #fe5b0e;
+}
+
+.partner-logo {
+	box-shadow: 0 5px 83px 0 rgba(40, 40, 40, 0.12);
+	text-align: center;
+	padding: 10px;
+	border-radius: 10px;
+	margin-bottom: 24px;
+	background-color: #fff;
+}
+.partner-logo img {
+	width: 150px;
+	height: 150px;
+	object-fit: contain;
+}
+
+.numbering_part svg {
+	margin-top: -5px;
+}
+
+/* Logo Style */
+.logo-dark,
+.logo-light,
+.footer__widget-content img {
+	max-width: 305px;
+	width: 100%;
+}
+
+.get_a_quote_form {
+	box-shadow: 0px 5px 83px 0px rgba(40, 40, 40, 0.12);
+	background-color: #fff;
+	padding: 40px 80px;
+	border-radius: 5px;
+}
+
+.get_a_quote_form input[type='file']::file-selector-button {
+	border-radius: 4px;
+	padding: 0 16px;
+	height: 40px;
+	cursor: pointer;
+	border: none;
+	background-color: #f4f4f4;
+	margin-right: 16px;
+	height: 52px;
+}
+
+.select_wrap {
+	position: relative;
+}
+.select_wrap svg {
+	position: absolute;
+	right: 10px;
+	top: 67%;
+	transform: translateY(-50%);
+}
+.get_a_quote_form select {
+	position: relative;
+	width: 100%;
+	appearance: none;
+}
+.about_heading_style h2 {
+	font-size: 40px;
+}
+
+@media (max-width: 991px) {
+	.more_services {
+		min-height: 261px;
+	}
+	.get_a_quote_form {
+		padding: 30px;
+	}
+}
+@media (max-width: 767px) {
+	.cta__title {
+		font-size: 25px;
+		line-height: 32px;
+	}
+	.sdCustomSliderHeadig {
+		font-size: 16px;
+	}
+	.about-discription p {
+		padding: 0;
+		margin-bottom: 0;
+	}
+	.sd_master_wrapper {
+		margin-bottom: 50px;
+	}
+}

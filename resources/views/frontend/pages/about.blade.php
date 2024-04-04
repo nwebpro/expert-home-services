@@ -1,0 +1,571 @@
+@extends('frontend.index')
+@section('content')
+    <!-- page title -->
+    <section
+        class="page-title page-title-layout1 bg-overlay bg-overlay-2 bg-parallax"
+    >
+        <div class="bg-img">
+            <img
+                src="{{('frontend/assets/images/page-titles/1.jpg')}}"
+                alt="background"
+            />
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                    <h1 class="pagetitle__heading">About Us</h1>
+                </div>
+                <!-- /.col-xl-6 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- About Us -->
+    <section class="about-area bg-gray">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12">
+                    <div class="about-images">
+                        <div class="about-thumb">
+                            <img src="{{('frontend/assets/images/about.jpg')}}" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="about-content ml-10">
+                        <div class="section-title about_heading_style">
+                            <h2 class="heading__title">
+                                Enjoy the best preservation and
+                                maintenance combined together
+                            </h2>
+                        </div>
+                        <div class="about-discription">
+                            <p>
+                                Expert.Services LLC is a leading team of
+                                experienced professionals in the
+                                property preservation and maintenance
+                                industry. We assist in maintaining,
+                                securing, restoring and repairing both
+                                vacant and occupied properties. Our key
+                                priority is to make sure that a
+                                property’s residences, buildings,
+                                interior, and exterior are in excellent
+                                shape.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Mission and Vision Area -->
+    <section class="pt-80 bg-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10">
+                    <div class="section-sub-titile heading text-center">
+                        <span class="heading__subtitle">WE MOVE</span>
+                        <h2 class="heading__title">
+                            The Secret of Our Success
+                        </h2>
+                        <p class="pb-4">
+                            Expert home services provides professional,
+                            reliable and affordable solutions for all of
+                            your home maintenance needs. Our experienced
+                            group is committed to conveying high-quality
+                            comes about whereas guaranteeing client
+                            fulfillment each step of the way. We are
+                            energetic almost our make and take
+                            incredible pride in making a difference you
+                            get the work done right the primary time. By
+                            contributing in quality items and taking
+                            after strict measures, we ensure a top notch
+                            combination of predominant workmanship and
+                            extraordinary benefit that will keep your
+                            domestic in culminate condition.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="success_content">
+                        <h2>Our Mission</h2>
+                        <p>
+                            Expert Home Services is devoted to giving
+                            extraordinary client benefit and solid
+                            workmanship. We endeavor to construct solid
+                            connections with our clients by conveying
+                            fair, quality domestic administrations with
+                            judgment and care.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="success_content">
+                        <h2>Our Vision</h2>
+                        <p>
+                            Expert Home Services is committed to
+                            providing quality services that bring
+                            comfort, convenience, and safety to our
+                            customers’ homes. We strive to exceed
+                            customer expectations and make sure their
+                            needs are met with the highest standards of
+                            care.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="success_content">
+                        <h2>Our Values</h2>
+                        <p>
+                            Expert Home Services is dedicated to
+                            providing the highest level of service and
+                            quality craftsmanship. We believe in honest
+                            communication, transparency, and treating
+                            customers with respect. We value our team
+                            members and their dedication to the success
+                            of our business. Our commitment to
+                            excellence helps us serve customers in the
+                            best possible way.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="success_content">
+                        <h2>Our People</h2>
+                        <p>
+                            Our people are experts in their field and
+                            dedicated to providing the highest quality
+                            home services. From carpentry and electrical
+                            work, to painting and appliance repair, our
+                            professionals are here to help you make your
+                            home beautiful. We strive for exceptional
+                            customer service and go above and beyond to
+                            ensure you’re satisfied with our work. With
+                            years of experience in the industry, you can
+                            trust that we will provide quality results
+                            every time.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Things we’re great at -->
+    <section style="background-color: #f5fafd">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-8 offset-lg-2">
+                    <div class="heading text-center mb-50">
+                        <h2 class="heading__title">
+                            Things we’re great at
+                        </h2>
+                        <p>
+                            We are one of the best if not the best
+                            preservation company out there. Time again
+                            and again we have proved that with our
+                            exceptional services. We are good at the
+                            things we do and there is no doubt about it.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8">
+                    <div class="why_choose_us_content">
+                        <div
+                            class="d-flex align-items-md-center flex-column flex-md-row"
+                        >
+                            <div class="numbering_part">
+                                <svg
+                                    width="29"
+                                    height="24"
+                                    viewBox="0 0 29 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M28.3762 11.25L25.7279 6.91C25.786 6.805 25.8283 6.68 25.8283 6.55C25.8283 6.15 25.4741 5.815 25.0512 5.8L22.1227 1.005C22.1491 0.925 22.1808 0.845 22.1808 0.765C22.1808 0.335 21.8108 0 21.372 0C21.1183 0 20.9069 0.105 20.7483 0.28H15.1079C14.9652 0.105 14.7537 0 14.5 0C14.2463 0 14.0348 0.105 13.8921 0.28H8.28345C8.13015 0.105 7.91342 0 7.65968 0C7.22093 0 6.85089 0.335 6.85089 0.765C6.85089 0.845 6.87732 0.94 6.90904 1.005L3.94878 5.865C3.66333 5.985 3.46774 6.24 3.46774 6.55C3.46774 6.575 3.48359 6.605 3.48359 6.63L0.666059 11.235C0.285454 11.3 0 11.61 0 11.985C0 12.345 0.269595 12.655 0.639628 12.735L3.5576 17.505C3.53117 17.585 3.51531 17.65 3.51531 17.745C3.51531 18.105 3.78491 18.415 4.15494 18.48L6.8879 22.965C6.86147 23.045 6.82975 23.14 6.82975 23.235C6.82975 23.665 7.19978 24 7.63853 24C7.89227 24 8.10372 23.895 8.24645 23.73H13.8974C14.0348 23.895 14.2568 24 14.5 24C14.7432 24 14.9652 23.895 15.1079 23.73H20.7694C20.9121 23.875 21.1236 23.97 21.3509 23.97C21.8055 23.97 22.1597 23.62 22.1597 23.205C22.1597 23.125 22.1438 23.06 22.1174 22.99L24.8503 18.475C25.2204 18.41 25.49 18.1 25.49 17.74C25.49 17.66 25.4741 17.58 25.4477 17.5L28.3498 12.73C28.7198 12.665 29 12.355 29 11.98C29 11.62 28.7304 11.31 28.3762 11.245V11.25ZM7.39008 21.735L5.08002 17.945H7.39008V21.735ZM7.39008 17.545H5.08002C5.06416 17.49 5.03773 17.44 5.0113 17.385L7.39008 15.015V17.545ZM7.39008 14.425L4.72585 17.09C4.65713 17.065 4.58312 17.025 4.5144 17.01L1.57 12.19C1.59643 12.125 1.59643 12.055 1.59643 11.99C1.59643 11.925 1.59643 11.87 1.58057 11.815L4.32938 7.315C4.47211 7.3 4.61484 7.26 4.74171 7.18L7.39008 9.78V14.425ZM7.39008 9.31L4.96901 6.94C5.03773 6.835 5.08002 6.7 5.08002 6.55C5.08002 6.535 5.06416 6.51 5.06416 6.495L7.3848 5.705V9.31H7.39008ZM7.39008 5.28L5.08002 6.07L7.39008 2.295V5.28ZM24.6495 7.235L24.6918 7.3L22.8257 15.655L19.4532 12.295L24.6336 7.22L24.6495 7.235ZM14.7009 16.955L15.3088 17.545H14.1035L14.7009 16.955ZM14.685 16.39L10.2816 12.12L14.4894 7.9L18.877 12.28L14.685 16.39ZM14.9705 16.685L19.1624 12.575L22.7306 16.14L22.4187 17.545H15.8585L14.9652 16.69L14.9705 16.685ZM20.9703 1.42C21.0284 1.445 21.0813 1.475 21.1553 1.485L24.216 6.52V6.545C24.216 6.69 24.2583 6.825 24.327 6.935L19.173 12L14.7855 7.62L20.9703 1.42ZM20.4892 1.315L14.4841 7.325L11.4657 4.31L20.2567 1.31H20.484L20.4892 1.315ZM13.9608 1.315C14.1035 1.45 14.2886 1.53 14.5 1.53C14.7114 1.53 14.8965 1.45 15.0392 1.315H19.0038L11.1591 3.99L8.46847 1.315H13.9608ZM7.81827 1.595L7.87641 1.49C7.92456 1.47855 7.97217 1.4652 8.01914 1.45L10.7257 4.14L7.82355 5.13V1.595H7.81827ZM7.81827 5.56L11.0323 4.46L14.1881 7.62L9.98031 11.825L7.81298 9.72V5.555L7.81827 5.56ZM7.81827 10.195L9.74244 12.08L7.81827 13.995V10.19V10.195ZM7.81827 14.59L10.0437 12.365L14.4207 16.665L13.5168 17.55H7.81827V14.59ZM8.1883 22.695C8.10372 22.615 8.00328 22.56 7.87641 22.52L7.81827 22.44V17.955H13.0992L8.25702 22.695H8.1883ZM15.0551 22.695C14.9123 22.575 14.7167 22.48 14.5053 22.48C14.2938 22.48 14.093 22.575 13.9555 22.695H8.85964L13.7018 17.955H15.7264L20.5685 22.695H15.0498H15.0551ZM21.3985 22.105L21.1712 22.48C21.1024 22.495 21.0443 22.52 20.9861 22.545L16.2709 17.95H22.3183L21.3985 22.1V22.105ZM22.0804 20.995L22.7623 17.955H23.9253L22.0857 20.995H22.0804ZM23.92 17.555H22.8416L23.0848 16.495L23.9887 17.405C23.9623 17.445 23.9306 17.5 23.92 17.55V17.555ZM27.4194 12.185L24.4909 17.02C24.4222 17.045 24.3482 17.075 24.2794 17.115L23.1905 16.015L25.0195 7.82L27.4406 11.785C27.4247 11.85 27.3983 11.92 27.3983 12C27.3983 12.065 27.4141 12.12 27.4247 12.19L27.4194 12.185Z"
+                                        fill="currentColor"
+                                    />
+                                </svg>
+                            </div>
+                            <h2 class="pl-md-3">
+                                Professional Plumbing Services
+                            </h2>
+                        </div>
+                        <p>
+                            Our team of highly skilled professionals can
+                            handle all your plumbing needs, from routine
+                            maintenance and repairs to installation of
+                            new plumbing systems. We use
+                            state-of-the-art technology to diagnose
+                            issues and make sure that any repairs are
+                            done efficiently and effectively. Our
+                            commitment to customer service ensures you
+                            will be satisfied with the work we do.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-8">
+                    <div class="why_choose_us_content">
+                        <div
+                            class="d-flex align-items-md-center flex-column flex-md-row"
+                        >
+                            <div class="numbering_part">
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M23.5453 7.48402L12.5766 0.171883C12.2016 -0.0577931 11.8031 -0.0624804 11.4234 0.171883L0.454687 7.48402C0.173437 7.67151 0 8.00431 0 8.34179V15.6539C0 15.9867 0.173437 16.3242 0.454687 16.5117L11.4234 23.8238C11.7984 24.0535 12.1969 24.0582 12.5766 23.8238L23.5453 16.5117C23.8266 16.3242 24 15.9914 24 15.6539V8.34179C24 8.009 23.8266 7.67151 23.5453 7.48402ZM13.0312 2.95612L21.1078 8.34179L17.5031 10.751L13.0312 7.76526V2.95612ZM10.9687 2.95612V7.76526L6.49687 10.751L2.89219 8.34179L10.9687 2.95612ZM2.0625 10.2683L4.64531 11.9979L2.0625 13.7228V10.2683ZM10.9687 21.0349L2.89219 15.6539L6.49687 13.2447L10.9687 16.2305V21.0396V21.0349ZM12 14.4306L8.35781 11.9932L12 9.5558L15.6422 11.9932L12 14.4306ZM13.0312 21.0349V16.2305L17.5031 13.2447L21.1078 15.6539L13.0312 21.0349ZM21.9375 13.7228L19.3547 11.9932L21.9375 10.2683V13.7228Z"
+                                        fill="currentColor"
+                                    />
+                                </svg>
+                            </div>
+                            <h2 class="pl-md-3">
+                                Quality Electrical Installations
+                            </h2>
+                        </div>
+                        <p>
+                            For homes and businesses, quality electrical
+                            installations guarantee safety,
+                            effectiveness, and durability. All
+                            components must be properly wired in
+                            compliance with the National Electrical Code
+                            (NEC) and any other local laws that may be
+                            in force. For the system to operate
+                            effectively, all components must be
+                            installed and linked in the proper order.
+                            Environmental factors should also be given
+                            special consideration, such as shielding
+                            cables from the elements or harm from vermin
+                            or birds. To ensure long-lasting
+                            functionality, quality electrical
+                            installations need experience, knowledge,
+                            and the appropriate tools.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-8">
+                    <div class="why_choose_us_content">
+                        <div
+                            class="d-flex align-items-md-center flex-column flex-md-row"
+                        >
+                            <div class="numbering_part">
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M10.9922 0.17713C11.6437 -0.0590435 12.3562 -0.0590435 13.0125 0.17713L22.0125 3.41744C23.2031 3.84727 24 4.98563 24 6.2657V17.7343C24 19.0096 23.2031 20.1527 22.0078 20.5826L13.0078 23.8229C12.3562 24.059 11.6437 24.059 10.9875 23.8229L1.9875 20.5826C0.796875 20.1527 0 19.0144 0 17.7343V6.2657C0 4.99036 0.796875 3.84727 1.99219 3.41744L10.9922 0.17713ZM12 3.02539L3.85781 5.95395L12 8.8825L20.1422 5.95395L12 3.02539ZM13.5 20.4361L21 17.739V8.85889L13.5 11.556V20.4361Z"
+                                        fill="currentColor"
+                                    />
+                                </svg>
+                            </div>
+                            <h2 class="pl-md-3">
+                                Reliable HVAC Maintenance and Repair
+                            </h2>
+                        </div>
+                        <p>
+                            Regular maintenance is crucial to ensuring
+                            that your HVAC system operates at its best
+                            and delivers dependable service for years to
+                            come. This entails having your system
+                            checked out by a professional at least once
+                            a year and taking care of any issues as soon
+                            as they arise. Additionally, it’s critical
+                            to routinely change the filters and maintain
+                            the space around the system clean and
+                            debris-free. Your HVAC system’s lifespan can
+                            be increased by properly cleaning coils,
+                            draining systems, and checking pressure
+                            levels. You can ultimately save time and
+                            money by taking these easy actions.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-8">
+                    <div class="why_choose_us_content">
+                        <div
+                            class="d-flex align-items-md-center flex-column flex-md-row"
+                        >
+                            <div class="numbering_part">
+                                <svg
+                                    width="24"
+                                    height="25"
+                                    viewBox="0 0 24 25"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M24 3.90625V6.25C24 8.4082 18.6268 10.1563 12 10.1563C5.37321 10.1563 0 8.4082 0 6.25V3.90625C0 1.74805 5.37321 0 12 0C18.6268 0 24 1.74805 24 3.90625ZM21.0643 10.4834C22.1786 10.1221 23.2018 9.6582 24 9.08691V14.0625C24 16.2207 18.6268 17.9688 12 17.9688C5.37321 17.9688 0 16.2207 0 14.0625V9.08691C0.798214 9.66309 1.82143 10.1221 2.93571 10.4834C5.34107 11.2646 8.54464 11.7188 12 11.7188C15.4554 11.7188 18.6589 11.2646 21.0643 10.4834ZM0 16.8994C0.798214 17.4756 1.82143 17.9346 2.93571 18.2959C5.34107 19.0771 8.54464 19.5313 12 19.5313C15.4554 19.5313 18.6589 19.0771 21.0643 18.2959C22.1786 17.9346 23.2018 17.4707 24 16.8994V21.0938C24 23.252 18.6268 25 12 25C5.37321 25 0 23.252 0 21.0938V16.8994Z"
+                                        fill="currentColor"
+                                    />
+                                </svg>
+                            </div>
+                            <h2 class="pl-md-3">
+                                Comprehensive Home Remodeling Solutions
+                            </h2>
+                        </div>
+                        <p>
+                            A technique known as “comprehensive house
+                            remodeling” includes all types of home
+                            improvements. It encompasses both indoor and
+                            exterior projects such painting, tile work,
+                            plumbing, drywall installation, flooring,
+                            siding, and roofing. Kitchen cabinets,
+                            bathroom fixtures, living room furniture,
+                            and lighting fixtures are all included in
+                            home remodeling projects. This thorough
+                            approach makes sure that all project
+                            components are taken into account to deliver
+                            high-quality output. Additionally, when
+                            correctly finished, extensive home
+                            remodeling will raise the value of your
+                            property while enhancing its overall visual
+                            appeal.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Counter Section -->
+    <section class="pt-80 bg-gray">
+        <div class="services-bg">
+            <div class="bg-img">
+                <img
+                    src="{{('frontend/assets/images/backgrounds/map.png')}}"
+                    alt="background"
+                />
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-8 offset-lg-2">
+                    <div class="heading text-center mb-40">
+                        <h2 class="heading__title">
+                            Our Success in Numbers
+                        </h2>
+                        <p>
+                            With the Internet spreading linke wildfire
+                            and reaching every part of our daily life,
+                            more and more traffic is directed to
+                            websites in search for information.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="counter_item mb-4 mb-lg-0">
+                        <div class="top_item">
+                            <div class="counter__icon">
+                                <i class="fa fa-envira"></i>
+                            </div>
+                            <h4><span class="counter">30</span>+</h4>
+                        </div>
+                        <h3>States Covered</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="counter_item mb-4 mb-lg-0">
+                        <div class="top_item">
+                            <div class="counter__icon">
+                                <i class="fa fa-smile-o"></i>
+                            </div>
+                            <h4>
+                                <span class="counter">15,000</span>+
+                            </h4>
+                        </div>
+                        <h3>Work Orders Completed</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="counter_item mb-4 mb-lg-0">
+                        <div class="top_item">
+                            <div class="counter__icon">
+                                <i class="fa fa-trophy"></i>
+                            </div>
+                            <h4><span class="counter">35</span>+</h4>
+                        </div>
+                        <h3>5 Star Rating</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="counter_item">
+                        <div class="top_item">
+                            <div class="counter__icon">
+                                <i class="fa fa-building"></i>
+                            </div>
+                            <h4><span class="counter">1,880</span>+</h4>
+                        </div>
+                        <h3>Properties Visited</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- Testimonials -->
+    <div>
+        <div class="bg-img background-size-auto">
+            <img
+                src="{{('frontend/assets/images/backgrounds/1.jpg')}}"
+                alt="background"
+            />
+        </div>
+        <section>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-10">
+                        <div
+                            class="section-sub-titile heading text-center"
+                        >
+									<span class="heading__subtitle"
+                                    >Don’t take our word for it – here’s
+										what our clients say:</span
+                                    >
+                            <h2 class="heading__title">
+                                Client Testimonials
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sd_master_wrapper">
+                <div class="sdtestBg2"></div>
+                <div class="sdtestBg3"></div>
+                <div class="slideshow">
+                    <div class="content">
+                        <div class="btnNtxt">
+                            <div class="sdAllContent">
+                                <h2 class="sdCustomSliderHeadig">
+                                    “Expert Home Services provides the
+                                    best customer service! The staff is
+                                    friendly and always willing to help.
+                                    I also appreciate their efficient
+                                    work that was completed within a
+                                    timely manner. Highly recommend
+                                    their services!”
+                                </h2>
+                                <h2 class="client_name">
+                                    Teresa Dobrenic
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <div class="btnNtxt">
+                            <div class="sdAllContent">
+                                <h2 class="sdCustomSliderHeadig">
+                                    “1. Expert Home Services are highly
+                                    professional and provide great
+                                    customer service. 2. Their prices
+                                    are extremely reasonable, which
+                                    helps save us a lot of money. 3.
+                                    They respond to inquiries very
+                                    quickly, which is always appreciated
+                                    when dealing with an emergency. 4.
+                                    They take pride in their work and
+                                    guarantee the best possible outcome
+                                    for any job they do. 5. They have a
+                                    team of knowledgeable and friendly
+                                    experts that can handle any problem
+                                    that may arise with your home
+                                    appliances or equipment.”
+                                </h2>
+                                <h2 class="client_name">
+                                    Jennifer Krzesimowski
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <div class="btnNtxt">
+                            <div class="sdAllContent">
+                                <h2 class="sdCustomSliderHeadig">
+                                    “I’ve been working with Expert Home
+                                    Services for several years now and
+                                    they are always a pleasure to deal
+                                    with. They have gone above and
+                                    beyond in their services, providing
+                                    excellent customer service and
+                                    quality work. Highly recommend!”
+                                </h2>
+                                <h2 class="client_name">Elsi James</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Our Partners  -->
+    <section>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10">
+                    <div class="section-sub-titile heading text-center">
+                        <h2 class="heading__title">Our Partners</h2>
+                        <p>
+                            We have prominent preservation companies as
+                            partners and we are proud to serve them
+                            efficiently
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-4">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="partner-logo">
+                        <img
+                            src="{{('frontend/assets/images/mcs.png')}}"
+                            alt="MCS Logo"
+                            draggable="false"
+                        />
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="partner-logo">
+                        <img
+                            src="{{('frontend/assets/images/mynd.png')}}"
+                            alt="Mynd Logo"
+                            draggable="false"
+                        />
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="partner-logo">
+                        <img
+                            src="{{('frontend/assets/images/cyprexx.png')}}"
+                            alt="Cyprexx Logo"
+                            draggable="false"
+                        />
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="partner-logo">
+                        <img
+                            src="{{('frontend/assets/images/a2z.png')}}"
+                            alt="A2Z Logo"
+                            draggable="false"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+@endsection
