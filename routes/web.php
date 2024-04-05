@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\admin\ContactUsController;
+use App\Http\Controllers\admin\CountryController;
 use App\Http\Controllers\admin\DashboardController;
 use App\Http\Controllers\frontend\AboutController;
 use App\Http\Controllers\frontend\AreaController;
@@ -50,5 +51,11 @@ Route::middleware('auth')->group(callback: function () {
     //Contact Us
     Route::get('/contact-us', [ContactUsController::class, 'index'])->name('contact-us');
     Route::get('/contact-delete/{id}', [ContactUsController::class, 'destroy'])->name('contact.destroy');
+
+    //Country Section
+    Route::get('/country-section', [CountryController::class, 'index'])->name('country.section');
+    Route::post('/country-store', [CountryController::class, 'store'])->name('country.store');
+    Route::put('/country-update/{id}', [CountryController::class, 'update'])->name('country.update');
+    Route::get('/country-delete/{id}', [CountryController::class, 'destroy'])->name('country.destroy');
 });
 require __DIR__.'/auth.php';

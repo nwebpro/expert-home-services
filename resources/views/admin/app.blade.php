@@ -118,16 +118,16 @@
                 <li class="side-nav-item">
                     <a data-bs-toggle="collapse" href="#sidebarPages" aria-expanded="false" aria-controls="sidebarPages" class="side-nav-link">
                         <i class="ri-pages-line"></i>
-                        <span> Test </span>
+                        <span> Quote </span>
                         <span class="menu-arrow"></span>
                     </a>
                     <div class="collapse" id="sidebarPages">
                         <ul class="side-nav-second-level">
                             <li>
-                                <a href="#"> Type</a>
+                                <a href="{{route('country.section')}}">Country</a>
                             </li>
                             <li>
-                                <a href="#"> List</a>
+                                <a href="#"> State</a>
                             </li>
                         </ul>
                     </div>

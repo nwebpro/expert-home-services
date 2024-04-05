@@ -5,15 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Contact extends Model
+class State extends Model
 {
     use HasFactory;
-
     protected $fillable = [
+        'country_id',
         'name',
-        'email',
-        'phone',
-        'subject',
-        'detail',
+        'status',
     ];
 }
