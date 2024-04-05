@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="A fully responsive admin theme which can be used to build CRM, CMS, ERP, etc." name="description" />
     <meta content="Your Name" name="author" />
-    <link rel="shortcut icon" href="{{ asset('assets/images/lemo.svg') }}">
+    <link rel="shortcut icon" href="{{ asset('backend/images/favicon.png') }}">
     <script src="{{ asset('backend/js/config.js') }}"></script>
     <link href="{{ asset('backend/css/app.min.css') }}" rel="stylesheet" type="text/css" id="app-style" />
     <link href="{{ asset('backend/css/icons.min.css') }}" rel="stylesheet" type="text/css" />
@@ -26,10 +26,10 @@
                             <div class="d-flex flex-column h-100">
                                 <div class="auth-brand p-4">
                                     <a href="{{ url('/') }}" class="logo-light">
-                                        <img src="{{ asset('backend/images/logo-dark.png') }}" alt="logo" height="10px">
+                                        <img src="{{ asset('backend/images/logo-dark.png') }}" alt="logo" style="height: 100px; width: 330px;">
                                     </a>
                                     <a href="{{ url('/') }}" class="logo-dark">
-                                        <img src="{{ asset('backend/images/logo-dark.png') }}" alt="dark logo" height="100px">
+                                        <img src="{{ asset('backend/images/logo-dark.png') }}" alt="dark logo" style="height: 100px; width: 330px;">
                                     </a>
                                 </div>
                                 <div class="p-4 pt-0 my-auto">

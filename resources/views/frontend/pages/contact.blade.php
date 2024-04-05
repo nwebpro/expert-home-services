@@ -116,10 +116,11 @@
                         <!-- /.contact__panel-info -->
                         <form
                             method="post"
-                            action="#"
+                            action="{{route('contact.store')}}"
                             id="contactForm"
                             class="contact__panel-form"
                         >
+                            @csrf
                             <div class="row">
                                 <div class="col-sm-12">
                                     <h4 class="contact__panel-title">
@@ -143,7 +144,7 @@
                                             class="form-control"
                                             placeholder="Name"
                                             id="contact-name"
-                                            name="contact-name"
+                                            name="name"
                                             required
                                         />
                                     </div>
@@ -156,7 +157,7 @@
                                             class="form-control"
                                             placeholder="Email"
                                             id="contact-email"
-                                            name="contact-email"
+                                            name="email"
                                             required
                                         />
                                     </div>
@@ -169,7 +170,7 @@
                                             class="form-control"
                                             placeholder="Phone"
                                             id="contact-Phone"
-                                            name="contact-phone"
+                                            name="phone"
                                             required
                                         />
                                     </div>
@@ -182,7 +183,7 @@
                                             class="form-control"
                                             placeholder="Subject"
                                             id="contact-subject"
-                                            name="contact-subject"
+                                            name="subject"
                                             required
                                         />
                                     </div>
@@ -197,7 +198,7 @@
                                                     placeholder="Additional Details!"
                                                     placeholder="Message"
                                                     id="contact-messgae"
-                                                    name="contact-message"
+                                                    name="detail"
                                                     required
                                                 ></textarea>
                                     </div>
