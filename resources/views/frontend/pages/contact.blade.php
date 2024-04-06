@@ -202,7 +202,12 @@
                                                     required
                                                 ></textarea>
                                     </div>
+                                    <div class="form-group">
+                                        <div class="g-recaptcha" data-sitekey="{{ env('RECAPTCHA_SITEKEY') }}"></div>
+                                    </div>
                                 </div>
+
+
                                 <!-- /.col-lg-12 -->
                                 <div
                                     class="col-sm-12 col-md-12 col-lg-12"
@@ -220,6 +225,7 @@
                                 </div>
                                 <!-- /.col-lg-12 -->
                             </div>
+
                             <!-- /.row -->
                         </form>
                     </div>
@@ -231,5 +237,6 @@
         </div>
         <!-- /.container -->
     </section>
-
+    //use script
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 @endsection
