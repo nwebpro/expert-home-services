@@ -29,17 +29,17 @@ use Illuminate\Support\Facades\Route;
 //Home Page
 Route::get('/', [HomeController::class, 'index'])->name('home');
 //About Page
-Route::get('/about', [AboutController::class, 'index'])->name('about');
+Route::get('/about-us', [AboutController::class, 'index'])->name('about');
 //Service Page
-Route::get('/service', [ServiceController::class, 'index'])->name('service');
+Route::get('/services', [ServiceController::class, 'index'])->name('service');
 //Area Page
-Route::get('/area', [AreaController::class, 'index'])->name('area');
+Route::get('/coverage-area', [AreaController::class, 'index'])->name('area');
 //Contact Page
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 Route::post('/contact-store', [ContactController::class, 'store'])->name('contact.store');
 
 //Quote Page
-Route::get('/quotes', [QuoteController::class, 'index'])->name('quote.page');
+Route::get('/get-a-quote', [QuoteController::class, 'index'])->name('quote.page');
 Route::get('/fetch-states/{country_id}', [QuoteController::class, 'fetchStates'])->name('fetch.states');
 Route::post('/quote-store', [QuoteController::class, 'quoteStore'])->name('quote.store');
 
