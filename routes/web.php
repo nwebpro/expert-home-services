@@ -3,6 +3,8 @@
 use App\Http\Controllers\admin\ContactUsController;
 use App\Http\Controllers\admin\CountryController;
 use App\Http\Controllers\admin\DashboardController;
+use App\Http\Controllers\admin\StateController;
+use App\Http\Controllers\admin\UserQuoteController;
 use App\Http\Controllers\frontend\AboutController;
 use App\Http\Controllers\frontend\AreaController;
 use App\Http\Controllers\frontend\ContactController;
@@ -37,8 +39,9 @@ Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 Route::post('/contact-store', [ContactController::class, 'store'])->name('contact.store');
 
 //Quote Page
-Route::get('/quote', [QuoteController::class, 'index'])->name('quote');
-
+Route::get('/quotes', [QuoteController::class, 'index'])->name('quote.page');
+Route::get('/fetch-states/{country_id}', [QuoteController::class, 'fetchStates'])->name('fetch.states');
+Route::post('/quote-store', [QuoteController::class, 'quoteStore'])->name('quote.store');
 
 
 Route::get('/login', function () {
@@ -57,5 +60,15 @@ Route::middleware('auth')->group(callback: function () {
     Route::post('/country-store', [CountryController::class, 'store'])->name('country.store');
     Route::put('/country-update/{id}', [CountryController::class, 'update'])->name('country.update');
     Route::get('/country-delete/{id}', [CountryController::class, 'destroy'])->name('country.destroy');
+
+    //State Section
+    Route::get('/state-section', [StateController::class, 'index'])->name('state.section');
+    Route::post('/state-store', [StateController::class, 'store'])->name('state.store');
+    Route::put('/state-update/{id}', [StateController::class, 'update'])->name('state.update');
+    Route::get('/state-delete/{id}', [StateController::class, 'destroy'])->name('state.destroy');
+
+    //Quote Section
+    Route::get('/quote-section', [UserQuoteController::class, 'quoteSection'])->name('quote.section');
+    Route::get('/quote-delete/{id}', [UserQuoteController::class, 'destroy'])->name('quote.destroy');
 });
 require __DIR__.'/auth.php';

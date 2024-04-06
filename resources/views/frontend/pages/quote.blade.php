@@ -26,9 +26,11 @@
                     <div class="get_a_quote_form">
                         <form
                             method="post"
-                            action="#"
+                            action="{{route('quote.store')}}"
                             class="contact__panel-form"
+                            enctype="multipart/form-data"
                         >
+                            @csrf
                             <div class="row">
                                 <div class="col-sm-12">
                                     <h4
@@ -43,28 +45,16 @@
                                         >Country*</label
                                         >
                                         <select
-                                            name="country"
+                                            name="country_id"
                                             id="country"
                                             class="form-control"
                                         >
                                             <option>
                                                 Select Country
                                             </option>
-                                            <option value="1">
-                                                USA
-                                            </option>
-                                            <option value="2">
-                                                Canada
-                                            </option>
-                                            <option value="3">
-                                                UK
-                                            </option>
-                                            <option value="4">
-                                                Australia
-                                            </option>
-                                            <option value="5">
-                                                New Zealand
-                                            </option>
+                                            @foreach($countries as $country)
+                                                <option value="{{ $country->id }}">{{ $country->name }}</option>
+                                            @endforeach
                                         </select>
                                         <svg
                                             width="24"
@@ -86,30 +76,12 @@
                                         >State*</label
                                         >
                                         <select
-                                            name="state"
+                                            name="state_id"
                                             id="state"
                                             class="form-control"
                                         >
                                             <option>
                                                 Select State
-                                            </option>
-                                            <option value="AL">
-                                                Alabama
-                                            </option>
-                                            <option value="AK">
-                                                Alaska
-                                            </option>
-                                            <option value="AZ">
-                                                Arizona
-                                            </option>
-                                            <option value="AR">
-                                                Arkansas
-                                            </option>
-                                            <option value="CA">
-                                                California
-                                            </option>
-                                            <option value="CO">
-                                                Colorado
                                             </option>
                                         </select>
                                         <svg
@@ -232,9 +204,9 @@
                                                 type="file"
                                                 class="form-control"
                                                 id="photo"
-                                                name="photo"
+                                                name="photo[]"
                                                 accept="image/*"
-                                                required
+                                                multiple
                                             />
                                         </div>
                                     </div>
@@ -282,6 +254,29 @@
             </div>
         </div>
     </section>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#country').change(function() {
+                var countryId = $(this).val();
+                if(countryId) {
+                    $.ajax({
+                        type: 'GET',
+                        url: '/fetch-states/' + countryId,
+                        success: function(states) {
+                            $('#state').empty();
+                            $('#state').append('<option value="">Select State</option>');
+                            $.each(states, function(key, value) {
+                                $('#state').append('<option value="' + value.id + '">' + value.name + '</option>');
+                            });
+                        }
+                    });
+                } else {
+                    $('#state').empty();
+                    $('#state').append('<option value="">Select State</option>');
+                }
+            });
+        });
+    </script>
 
 @endsection

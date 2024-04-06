@@ -127,7 +127,10 @@
                                 <a href="{{route('country.section')}}">Country</a>
                             </li>
                             <li>
-                                <a href="#"> State</a>
+                                <a href="{{route('state.section')}}"> State</a>
+                            </li>
+                            <li>
+                                <a href="{{route('quote.section')}}"> User Quote</a>
                             </li>
                         </ul>
                     </div>

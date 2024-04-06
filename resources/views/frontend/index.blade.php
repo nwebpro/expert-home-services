@@ -94,7 +94,7 @@
                             class="nav__item nav__item-btn d-none d-md-block"
                         >
                             <a
-                                href="{{route('quote')}}"
+                                href="{{route('quote.page')}}"
                                 class="btn btn__primary action__btn-request"
                             >
 										<span>Get A Quote</span
