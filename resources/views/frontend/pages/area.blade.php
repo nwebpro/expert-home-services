@@ -157,7 +157,7 @@
                             any questions, we’re here to help you!
                             <br />
                             <span style="color: #fe5a0e"
-                            >CALL 703 380 7890 for more
+                            >CALL +1 871-406-2988 for more
 										informations</span
                             >
                         </h3>
