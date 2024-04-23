@@ -164,27 +164,27 @@
                             <nav>
                                 <ul class="list-unstyled">
                                     <li>
-                                        <a href="javascript:void(0)"
+                                        <a href="{{route('service')}}"
                                         >Eviction</a
                                         >
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0)"
+                                        <a href="{{route('service')}}"
                                         >Landscaping</a
                                         >
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0)"
+                                        <a href="{{route('service')}}"
                                         >Roofing
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0)"
+                                        <a href="{{route('service')}}"
                                         >Trash Out
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0)"
+                                        <a href="{{route('service')}}"
                                         >Inspection</a
                                         >
                                     </li>
@@ -200,25 +200,25 @@
                             <nav>
                                 <ul class="list-unstyled">
                                     <li>
-                                        <a href="index.html">Home</a>
+                                        <a href="{{route('home')}}">Home</a>
                                     </li>
                                     <li>
-                                        <a href="about-us.html"
+                                        <a href="{{route('about')}}"
                                         >About Us</a
                                         >
                                     </li>
                                     <li>
-                                        <a href="services.html"
+                                        <a href="{{route('service')}}"
                                         >Services</a
                                         >
                                     </li>
                                     <li>
-                                        <a href="coverage-area.html"
+                                        <a href="{{route('area')}}"
                                         >Coverage Area</a
                                         >
                                     </li>
                                     <li>
-                                        <a href="contact-us.html"
+                                        <a href="{{route('contact')}}"
                                         >Contact Us</a
                                         >
                                     </li>

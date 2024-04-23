@@ -55,10 +55,10 @@
                             </p>
                             <h2>Our current coverage</h2>
                             <ul>
-                                <li>1. Virginia</li>
-                                <li>2. Alabama</li>
-                                <li>3. New York</li>
-                                <li>4. New Jersey</li>
+                                @foreach($state as $key=>$stateData)
+                                <li>{{$key+1}}. {{$stateData->name}}</li>
+                                @endforeach
+
                             </ul>
                         </div>
                     </div>
@@ -100,7 +100,7 @@
                             <div class="counter__icon">
                                 <i class="fa fa-envira"></i>
                             </div>
-                            <h4><span class="counter">30</span>+</h4>
+                            <h4><span class="counter">{{$stateCount}}</span>+</h4>
                         </div>
                         <h3>States Covered</h3>
                     </div>
