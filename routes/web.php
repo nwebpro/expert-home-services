@@ -4,6 +4,7 @@ use App\Http\Controllers\admin\ContactUsController;
 use App\Http\Controllers\admin\CountryController;
 use App\Http\Controllers\admin\DashboardController;
 use App\Http\Controllers\admin\StateController;
+use App\Http\Controllers\admin\SuccessNumberController;
 use App\Http\Controllers\admin\UserQuoteController;
 use App\Http\Controllers\frontend\AboutController;
 use App\Http\Controllers\frontend\AreaController;
@@ -70,5 +71,11 @@ Route::middleware('auth')->group(callback: function () {
     //Quote Section
     Route::get('/quote-section', [UserQuoteController::class, 'quoteSection'])->name('quote.section');
     Route::get('/quote-delete/{id}', [UserQuoteController::class, 'destroy'])->name('quote.destroy');
+
+    //Success Number
+    Route::get('/success-number-section', [SuccessNumberController::class, 'index'])->name('success.number.section');
+    Route::post('/success-number-store', [SuccessNumberController::class, 'store'])->name('success.number.store');
+    Route::put('/success-number-update/{id}', [SuccessNumberController::class, 'update'])->name('success.number.update');
+    Route::get('/success-number-delete/{id}', [SuccessNumberController::class, 'destroy'])->name('success.number.destroy');
 });
 require __DIR__.'/auth.php';

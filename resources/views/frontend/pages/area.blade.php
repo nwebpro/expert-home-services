@@ -112,10 +112,10 @@
                                 <i class="fa fa-smile-o"></i>
                             </div>
                             <h4>
-                                <span class="counter">15,000</span>+
+                                <span class="counter">{{$SuccessNumber[0]->total_number}}</span>+
                             </h4>
                         </div>
-                        <h3>Work Orders Completed</h3>
+                        <h3>{{$SuccessNumber[0]->name}}</h3>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
@@ -124,9 +124,9 @@
                             <div class="counter__icon">
                                 <i class="fa fa-trophy"></i>
                             </div>
-                            <h4><span class="counter">35</span>+</h4>
+                            <h4><span class="counter">{{$SuccessNumber[1]->total_number}}</span>+</h4>
                         </div>
-                        <h3>5 Star Rating</h3>
+                        <h3>{{$SuccessNumber[1]->name}}</h3>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
@@ -135,9 +135,9 @@
                             <div class="counter__icon">
                                 <i class="fa fa-building"></i>
                             </div>
-                            <h4><span class="counter">1,880</span>+</h4>
+                            <h4><span class="counter">{{$SuccessNumber[2]->total_number}}</span>+</h4>
                         </div>
-                        <h3>Properties Visited</h3>
+                        <h3>{{$SuccessNumber[2]->name}}</h3>
                     </div>
                 </div>
             </div>
