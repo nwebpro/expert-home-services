@@ -99,4 +99,9 @@ class QuoteController extends Controller
         }
     }
 
+    public function success()
+    {
+        return view('frontend.pages.verified');
+    }
+
 }

@@ -45,6 +45,7 @@ Route::get('/fetch-states/{country_id}', [QuoteController::class, 'fetchStates']
 Route::post('/quote-store', [QuoteController::class, 'quoteStore'])->name('quote.store');
 Route::get('verify-quote/{quote}', [QuoteController::class, 'verifyQuote'])->name('verify.quote');
 
+Route::get('verify-success', [QuoteController::class, 'success'])->name('success');
 
 
 Route::get('/login', function () {
