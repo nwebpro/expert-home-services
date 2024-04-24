@@ -30,7 +30,7 @@
                                 accordingly.
                             </p>
                             <a
-                                href="contacs.html"
+                                href="{{route('contact')}}"
                                 class="btn btn__primary btn__icon btn__lg mr-30"
                             >
 											<span>Contact Us Today!</span
@@ -72,7 +72,7 @@
                                 accordingly.
                             </p>
                             <a
-                                href="contacs.html"
+                                href="{{route('contact')}}"
                                 class="btn btn__primary btn__icon btn__lg mr-30"
                             >
 											<span>Contact Us Today!</span

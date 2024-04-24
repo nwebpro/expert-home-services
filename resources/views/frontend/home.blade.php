@@ -154,7 +154,7 @@
                     </div>
                     <!-- about infor -->
                     <a
-                        href="contacs.html"
+                        href="{{route('quote.page')}}"
                         class="btn btn__primary btn__icon btn__lg mr-30"
                     >
 									<span>Get Started Now</span
