@@ -162,7 +162,7 @@
                             >
                         </h3>
                         <a
-                            href="contact-us.html"
+                            href="{{route('contact')}}"
                             class="btn btn__primary"
                         >Call us Today!</a
                         >

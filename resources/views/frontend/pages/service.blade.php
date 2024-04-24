@@ -31,7 +31,7 @@
                         details are taken care of.
                     </p>
                     <a
-                        href="contacs.html"
+                        href="{{route('quote.page')}}"
                         class="btn btn__primary btn__icon"
                     >
 								<span>GET A FREE QUOTE</span
