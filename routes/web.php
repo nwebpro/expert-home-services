@@ -43,6 +43,8 @@ Route::post('/contact-store', [ContactController::class, 'store'])->name('contac
 Route::get('/get-a-quote', [QuoteController::class, 'index'])->name('quote.page');
 Route::get('/fetch-states/{country_id}', [QuoteController::class, 'fetchStates'])->name('fetch.states');
 Route::post('/quote-store', [QuoteController::class, 'quoteStore'])->name('quote.store');
+Route::get('verify-quote/{quote}', [QuoteController::class, 'verifyQuote'])->name('verify.quote');
+
 
 
 Route::get('/login', function () {

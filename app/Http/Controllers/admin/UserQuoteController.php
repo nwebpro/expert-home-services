@@ -11,7 +11,7 @@ class UserQuoteController extends Controller
 {
     public function quoteSection()
     {
-        $quote = Quote::with('country', 'state')->get();
+        $quote = Quote::where('email_verify',1)->with('country', 'state')->get();
         return view('admin.pages.quote.index', compact('quote'));
     }
 

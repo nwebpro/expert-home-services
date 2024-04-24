@@ -22,6 +22,8 @@ return new class extends Migration
             $table->text('address');
             $table->text('problem_message');
             $table->string('photo')->nullable();
+            $table->string('verification_token')->nullable();
+            $table->boolean('email_verify')->default(false);
             $table->timestamps();
         });
     }

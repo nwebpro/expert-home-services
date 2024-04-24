@@ -3,10 +3,13 @@
 namespace App\Http\Controllers\frontend;
 
 use App\Http\Controllers\Controller;
+use App\Mail\QuoteVerification;
 use App\Models\Country;
 use App\Models\Quote;
 use App\Models\State;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Str;
 use Toastr;
 class QuoteController extends Controller
 {
@@ -57,14 +60,43 @@ class QuoteController extends Controller
                 }
                 $quote->photo = json_encode($images);
             }
-
             $quote->save();
 
+           // Debugging (remove this line after testing
+
+            // Send verification email
+            $verificationToken = Str::random(40); // Generate a random token
+
+
+            $quote->verification_token = $verificationToken; // Add token to the quote
+            $quote->save(); // Save the token in the database
+            Mail::to($quote->email)->send(new QuoteVerification($quote)); // Send verification email
             Toastr::success('Message Sent Successfully', 'Success');
             return redirect()->back();
+
+
         } catch (\Exception $e) {
-            Toastr::error('Something went wrong', 'Error');
+            Toastr::error('Something went wrong: ' . $e->getMessage(), 'Error');
             return redirect()->back()->withInput(); // Redirect back with input in case of an error
         }
     }
+
+
+
+
+    public function verifyQuote(Quote $quote, Request $request)
+    {
+        if ($quote->verification_token === $request->token) {
+            $quote->email_verify = true;
+            $quote->save();
+            // Optionally, you can redirect the user to a success page or display a success message.
+            // For example:
+            return redirect()->route('success')->with('success', 'Your email has been verified successfully.');
+        } else {
+            // Token doesn't match, handle accordingly.
+            // For example:
+            return redirect()->route('error')->with('error', 'Invalid verification token.');
+        }
+    }
+
 }
