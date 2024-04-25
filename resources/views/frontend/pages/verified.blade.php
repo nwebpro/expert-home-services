@@ -28,7 +28,7 @@
                             <h4
                                 class="contact__panel-title text-center"
                             >
-                                Thanks To Verify Your Email
+                                Thanks To Verify Your Email and Send Message Successfully
                             </h4>
                         </div>
                     </div>

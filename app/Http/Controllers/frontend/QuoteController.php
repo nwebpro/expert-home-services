@@ -71,7 +71,7 @@ class QuoteController extends Controller
             $quote->verification_token = $verificationToken; // Add token to the quote
             $quote->save(); // Save the token in the database
             Mail::to($quote->email)->send(new QuoteVerification($quote)); // Send verification email
-            Toastr::success('Message Sent Successfully', 'Success');
+            Toastr::success('Send Verification link in your mail please verify', 'Success');
             return redirect()->back();
 
 

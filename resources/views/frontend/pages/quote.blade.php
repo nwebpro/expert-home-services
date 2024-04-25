@@ -140,41 +140,92 @@
                                         </div>
                                     </div>
                                     <!-- /.col-lg-6 -->
-                                    <div
-                                        class="col-sm-6 col-md-6 col-lg-6"
-                                    >
+
+
+{{--                                    <div--}}
+{{--                                        class="col-sm-6 col-md-6 col-lg-6"--}}
+{{--                                    >--}}
+{{--                                        <div class="form-group">--}}
+{{--                                            <label for="phone"--}}
+{{--                                            >Phone*</label--}}
+{{--                                            >--}}
+{{--                                            <input--}}
+{{--                                                type="text"--}}
+{{--                                                class="form-control"--}}
+{{--                                                placeholder="Phone"--}}
+{{--                                                id="Phone"--}}
+{{--                                                name="phone"--}}
+{{--                                                required--}}
+{{--                                            />--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+
+
+
+{{--                                    <div class="col-sm-6 col-md-6 col-lg-6">--}}
+{{--                                        <div class="form-group">--}}
+{{--                                            <label for="phone">Phone*</label>--}}
+{{--                                            <input--}}
+{{--                                                type="text"--}}
+{{--                                                class="form-control"--}}
+{{--                                                placeholder="Phone"--}}
+{{--                                                id="phone"--}}
+{{--                                                name="phone"--}}
+{{--                                                required--}}
+{{--                                            />--}}
+{{--                                            <span class="phone-validation-message" style="color: red;"></span> <!-- Validation message -->--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+
+
+                                    <div class="col-sm-6 col-md-6 col-lg-6">
                                         <div class="form-group">
-                                            <label for="phone"
-                                            >Phone*</label
-                                            >
+                                            <label for="phone">Phone*</label>
                                             <input
                                                 type="text"
                                                 class="form-control"
-                                                placeholder="Phone"
-                                                id="Phone"
+                                                placeholder="+1-123-456-7890"
+                                                id="phone"
                                                 name="phone"
+                                                maxlength="12"
                                                 required
+                                                value="+1"
                                             />
+                                            <span class="phone-validation-message" style="color: red;"></span> <!-- Validation message -->
                                         </div>
                                     </div>
+
+
+
+
                                     <!-- /.col-lg-6 -->
-                                    <div
-                                        class="col-sm-6 col-md-6 col-lg-6"
-                                    >
+{{--                                    <div--}}
+{{--                                        class="col-sm-6 col-md-6 col-lg-6"--}}
+{{--                                    >--}}
+{{--                                        <div class="form-group">--}}
+{{--                                            <label for="zip_code"--}}
+{{--                                            >Zip Code*</label--}}
+{{--                                            >--}}
+{{--                                            <input--}}
+{{--                                                type="number"--}}
+{{--                                                class="form-control"--}}
+{{--                                                placeholder="Zip Code"--}}
+{{--                                                id="zip_code"--}}
+{{--                                                name="zip_code"--}}
+{{--                                                maxlength="5"--}}
+{{--                                                pattern="\d{5}"--}}
+{{--                                                required--}}
+{{--                                            />--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+
+                                    <div class="col-sm-6 col-md-6 col-lg-6">
                                         <div class="form-group">
-                                            <label for="zip_code"
-                                            >Zip Code*</label
-                                            >
-                                            <input
-                                                type="text"
-                                                class="form-control"
-                                                placeholder="Zip Code"
-                                                id="zip_code"
-                                                name="zip_code"
-                                                required
-                                            />
+                                            <label for="zip_code">Zip Code*</label>
+                                            <input type="number" class="form-control" placeholder="Zip Code" id="zip_code" name="zip_code" min="0" step="1" required />
                                         </div>
                                     </div>
+
 
                                     <div
                                         class="col-sm-6 col-md-6 col-lg-6"
@@ -255,11 +306,53 @@
         </div>
     </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
+{{--    <script>--}}
+{{--        $(document).ready(function() {--}}
+{{--            $('#country').change(function() {--}}
+{{--                var countryId = $(this).val();--}}
+{{--                if(countryId) {--}}
+{{--                    $.ajax({--}}
+{{--                        type: 'GET',--}}
+{{--                        url: '/fetch-states/' + countryId,--}}
+{{--                        success: function(states) {--}}
+{{--                            $('#state').empty();--}}
+{{--                            $('#state').append('<option value="">Select State</option>');--}}
+{{--                            $.each(states, function(key, value) {--}}
+{{--                                $('#state').append('<option value="' + value.id + '">' + value.name + '</option>');--}}
+{{--                            });--}}
+{{--                        }--}}
+{{--                    });--}}
+{{--                } else {--}}
+{{--                    $('#state').empty();--}}
+{{--                    $('#state').append('<option value="">Select State</option>');--}}
+{{--                }--}}
+{{--            });--}}
+{{--        });--}}
+{{--    </script>--}}
+
+
     <script>
         $(document).ready(function() {
+            // function validatePhoneNumber(phoneNumber) {
+            //     var regex = /^\+1 \(\d{3}\) \d{3}-\d{4}$/;
+            //     return regex.test(phoneNumber);
+            // }
+
+            function validatePhoneNumber(phoneNumber) {
+                // Remove any non-digit characters
+                var cleanedPhoneNumber = phoneNumber.replace(/\D/g, '');
+
+                // Check if the cleaned phone number matches the desired format
+                var regex = /^\+?1?\d{3}?\d{3}?\d{4}$/;
+                return regex.test(cleanedPhoneNumber);
+            }
+
             $('#country').change(function() {
                 var countryId = $(this).val();
-                if(countryId) {
+                if (countryId) {
                     $.ajax({
                         type: 'GET',
                         url: '/fetch-states/' + countryId,
@@ -276,7 +369,45 @@
                     $('#state').append('<option value="">Select State</option>');
                 }
             });
+
+            function toggleSubmitButton() {
+                var phoneNumber = $('#phone').val();
+                var $submitButton = $('button[type="submit"]');
+                if (validatePhoneNumber(phoneNumber)) {
+                    $submitButton.prop('disabled', false);
+                } else {
+                    $submitButton.prop('disabled', true);
+                }
+            }
+
+
+            $('#phone').on('input', function() {
+                var phoneNumber = $(this).val();
+                var $validationMessage = $('.phone-validation-message');
+
+                if (!validatePhoneNumber(phoneNumber)) {
+                    $validationMessage.text('Please enter a valid USA phone number in the format +1 (XXX) XXX-XXXX.');
+                } else {
+                    $validationMessage.text('');
+                }
+
+                toggleSubmitButton();
+            });
+            toggleSubmitButton();
         });
     </script>
+
+    <script>
+        // JavaScript to enforce 5-digit requirement for zip code
+        document.getElementById("zip_code").addEventListener("input", function() {
+            if (this.value.length > 5) {
+                this.value = this.value.slice(0, 5); // Truncate input to 5 digits
+            }
+        });
+    </script>
+
+
+
+
 
 @endsection
