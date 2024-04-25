@@ -17,7 +17,10 @@ class Quote extends Model
         'zip_code',
         'address',
         'problem_message',
-        'photo'
+        'photo',
+        'verification_token',
+        'email_verify',
+
 
     ];
     public function country()
