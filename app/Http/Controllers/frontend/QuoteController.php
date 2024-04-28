@@ -72,7 +72,7 @@ class QuoteController extends Controller
             $quote->save(); // Save the token in the database
             Mail::to($quote->email)->send(new QuoteVerification($quote)); // Send verification email
             Toastr::success('Send Verification link in your mail please verify', 'Success');
-            return redirect()->back();
+            return redirect()->route('success.send.verify.email');
 
 
         } catch (\Exception $e) {
@@ -97,6 +97,11 @@ class QuoteController extends Controller
             // For example:
             return redirect()->route('error')->with('error', 'Invalid verification token.');
         }
+    }
+
+    public function successSendVerifyEmail()
+    {
+        return view('frontend.pages.mailSend');
     }
 
     public function success()

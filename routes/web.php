@@ -44,7 +44,7 @@ Route::get('/get-a-quote', [QuoteController::class, 'index'])->name('quote.page'
 Route::get('/fetch-states/{country_id}', [QuoteController::class, 'fetchStates'])->name('fetch.states');
 Route::post('/quote-store', [QuoteController::class, 'quoteStore'])->name('quote.store');
 Route::get('verify-quote/{quote}', [QuoteController::class, 'verifyQuote'])->name('verify.quote');
-
+Route::get('verify-email-send-success', [QuoteController::class, 'successSendVerifyEmail'])->name('success.send.verify.email');
 Route::get('verify-success', [QuoteController::class, 'success'])->name('success');
 
 
